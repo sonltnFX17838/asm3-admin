@@ -1,6 +1,14 @@
 {
   "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/login", "dest": "/" }
+    { "src": "/admin/.*", "dest": "/admin/" },
+    { "src": "/admin/home/.*", "dest": "/admin/" },
+    { "src": "/admin/products/.*", "dest": "/admin/" },
+    { "src": "/admin/product/:productId/.*", "dest": "/admin/" },
+    { "src": "/admin/new-product/.*", "dest": "/admin/" },
+    { "src": "/admin/dash-board/.*", "dest": "/admin/" },
+    { "src": "/admin/detail/:idDetail/.*", "dest": "/admin/" },
+    { "src": "/chat/.*", "dest": "/chat/" },
+    { "src": "/login/.*", "dest": "/login/" },
+    { "src": "/.*", "dest": "/" }
   ]
 }
