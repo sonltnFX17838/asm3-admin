@@ -2,19 +2,18 @@
   "rewrites": [
     { "source": "/", "destination": "/" },
     { "source": "/login", "destination": "/" },
-    { "source": "/chat", "destination": "/chat" },
-    { "source": "/admin", "destination": "/admin/home" },
-    { "source": "/admin/home", "destination": "/admin/home" },
-    { "source": "/admin/products", "destination": "/admin/products" },
+    { "source": "/admin", "destination": "/admin/index.html" },
+    { "source": "/admin/home", "destination": "/admin/index.html" },
+    { "source": "/admin/products", "destination": "/admin/index.html" },
     {
       "source": "/admin/product/:productId",
-      "destination": "/admin/product/:productId"
+      "destination": "/admin/index.html"
     },
-    { "source": "/admin/new-product", "destination": "/admin/new-product" },
-    { "source": "/admin/dash-board", "destination": "/admin/dash-board" },
-    {
-      "source": "/admin/detail/:idDetail",
-      "destination": "/admin/detail/:idDetail"
-    }
+    { "source": "/admin/new-product", "destination": "/admin/index.html" },
+    { "source": "/admin/dash-board", "destination": "/admin/index.html" },
+    { "source": "/admin/detail/:idDetail", "destination": "/admin/index.html" },
+    { "source": "/chat", "destination": "/chat/index.html" },
+    { "source": "/login", "destination": "/login/index.html" },
+    { "source": "/:splat", "destination": "/index.html" }
   ]
 }
