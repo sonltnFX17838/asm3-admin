@@ -1,17 +1,20 @@
 {
-  "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/login", "dest": "/" },
-    { "src": "/chat", "dest": "/chat" },
-    { "src": "/admin", "dest": "/admin/home" },
-    { "src": "/admin/home", "dest": "/admin/home" },
-    { "src": "/admin/products", "dest": "/admin/products" },
+  "rewrites": [
+    { "source": "/", "destination": "/" },
+    { "source": "/login", "destination": "/" },
+    { "source": "/chat", "destination": "/chat" },
+    { "source": "/admin", "destination": "/admin/home" },
+    { "source": "/admin/home", "destination": "/admin/home" },
+    { "source": "/admin/products", "destination": "/admin/products" },
     {
-      "src": "/admin/product/:productId",
-      "dest": "/admin/product/:productId"
+      "source": "/admin/product/:productId",
+      "destination": "/admin/product/:productId"
     },
-    { "src": "/admin/new-product", "dest": "/admin/new-product" },
-    { "src": "/admin/dash-board", "dest": "/admin/dash-board" },
-    { "src": "/admin/detail/:idDetail", "dest": "/admin/detail/:idDetail" }
+    { "source": "/admin/new-product", "destination": "/admin/new-product" },
+    { "source": "/admin/dash-board", "destination": "/admin/dash-board" },
+    {
+      "source": "/admin/detail/:idDetail",
+      "destination": "/admin/detail/:idDetail"
+    }
   ]
 }
