@@ -26,6 +26,7 @@ function App() {
           <Route path="new-product" element={<NewProduct />} />
           <Route path="dash-board" element={<Dashbroad />} />
           <Route path="detail/:idDetail" element={<ViewDetail />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
         <Route
           path="chat"

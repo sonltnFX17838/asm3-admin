@@ -1,17 +1,17 @@
 {
   "routes": [
-    { "src": "/admin(/|$)(.*)", "dest": "/admin/index.html" },
-    { "src": "/admin/home(/|$)(.*)", "dest": "/admin/index.html" },
-    { "src": "/admin/products(/|$)(.*)", "dest": "/admin/index.html" },
+    { "src": "/", "dest": "/" },
+    { "src": "/login", "dest": "/" },
+    { "src": "/chat", "dest": "/chat" },
+    { "src": "/admin", "dest": "/admin/home" },
+    { "src": "/admin/home", "dest": "/admin/home" },
+    { "src": "/admin/products", "dest": "/admin/products" },
     {
-      "src": "/admin/product/:productId(/|$)(.*)",
-      "dest": "/admin/index.html"
+      "src": "/admin/product/:productId",
+      "dest": "/admin/product/:productId"
     },
-    { "src": "/admin/new-product(/|$)(.*)", "dest": "/admin/index.html" },
-    { "src": "/admin/dash-board(/|$)(.*)", "dest": "/admin/index.html" },
-    { "src": "/admin/detail/:idDetail(/|$)(.*)", "dest": "/admin/index.html" },
-    { "src": "/chat(/|$)(.*)", "dest": "/chat/index.html" },
-    { "src": "/login(/|$)(.*)", "dest": "/login/index.html" },
-    { "src": "/.*", "dest": "/index.html" }
+    { "src": "/admin/new-product", "dest": "/admin/new-product" },
+    { "src": "/admin/dash-board", "dest": "/admin/dash-board" },
+    { "src": "/admin/detail/:idDetail", "dest": "/admin/detail/:idDetail" }
   ]
 }
